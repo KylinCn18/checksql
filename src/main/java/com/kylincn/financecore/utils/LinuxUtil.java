@@ -1,11 +1,11 @@
-package com.suning.financecore.utils;
+package com.kylincn.financecore.utils;
 
 
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
-import com.suning.financecore.bean.DataSourceInfo;
+import com.kylincn.financecore.bean.DataSourceInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

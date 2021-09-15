@@ -1,4 +1,4 @@
-package com.suning.financecore.utils;
+package com.kylincn.financecore.utils;
 
 import org.apache.commons.collections.map.CaseInsensitiveMap;
 

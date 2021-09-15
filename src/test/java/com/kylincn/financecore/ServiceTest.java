@@ -1,4 +1,4 @@
-package com.suning.financecore;
+package com.kylincn.financecore;
 
 import org.junit.Test;
 

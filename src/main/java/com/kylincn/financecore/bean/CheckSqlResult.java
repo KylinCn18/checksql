@@ -1,4 +1,4 @@
-package com.suning.financecore.bean;
+package com.kylincn.financecore.bean;
 
 /**
  * description: CheckSqlResult <br>

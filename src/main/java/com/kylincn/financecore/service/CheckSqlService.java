@@ -1,4 +1,4 @@
-package com.suning.financecore.service;
+package com.kylincn.financecore.service;
 
 import com.alibaba.druid.sql.ast.SQLStatement;
 import com.alibaba.druid.sql.dialect.db2.parser.DB2StatementParser;
@@ -9,8 +9,9 @@ import com.alibaba.druid.sql.parser.SQLStatementParser;
 import com.alibaba.druid.sql.visitor.SchemaStatVisitor;
 import com.alibaba.druid.stat.TableStat;
 import com.alibaba.druid.util.StringUtils;
-import com.suning.financecore.bean.CheckSqlResult;
-import com.suning.financecore.bean.DataSourceInfo;
+import com.kylincn.financecore.bean.CheckSqlResult;
+import com.kylincn.financecore.bean.DataSourceInfo;
+import com.kylincn.financecore.utils.*;
 import com.suning.financecore.utils.*;
 import freemarker.template.Configuration;
 import freemarker.template.Template;

@@ -1,4 +1,4 @@
-package com.suning.financecore.utils;
+package com.kylincn.financecore.utils;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
