@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="accountWhiteList">
+
+    <sql id="count">
+        <![CDATA[
+			SELECT COUNT(1) AS count FROM (
+				SELECT BRC,STORE,BANKCHANNEL,PAYTYPE,SUM(TRANAMT) AS totamt FROM FASVCSALESUSECOUNT
+				WHERE TRANTYPE=:tranType AND ACCDATE between :beginDate AND  :endDate
+				group by brc,store,bankchannel,paytype
+				)
+			FOR READ ONLY
+			 ]]>
+    </sql>
+    <sql id="query">
+        <![CDATA[
+			SELECT PAGE_ROW_.* FROM (SELECT ROWNUMBER() OVER() AS ROWID_,  ORGIN_TBL_.* FROM (
+				SELECT BRC,STORE,BANKCHANNEL,PAYTYPE,SUM(TRANAMT) AS totamt FROM FASVCSALESUSECOUNT
+				WHERE TRANTYPE=:tranType AND ACCDATE between :beginDate AND  :endDate
+				group by brc,store,bankchannel,paytype
+			 ) ORGIN_TBL_) PAGE_ROW_ WHERE PAGE_ROW_.ROWID_ >= (:startIndex + 1) AND PAGE_ROW_.ROWID_ <= (:startIndex + :maxCount)
+            FOR READ ONLY
+			 ]]>
+    </sql>
+
+</sqlMap>
