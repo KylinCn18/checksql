@@ -12,7 +12,6 @@ import com.alibaba.druid.util.StringUtils;
 import com.kylincn.financecore.bean.CheckSqlResult;
 import com.kylincn.financecore.bean.DataSourceInfo;
 import com.kylincn.financecore.utils.*;
-import com.suning.financecore.utils.*;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.apache.commons.collections.map.CaseInsensitiveMap;
